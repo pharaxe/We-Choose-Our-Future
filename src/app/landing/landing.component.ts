@@ -34,7 +34,7 @@ export class LandingComponent implements OnInit, OnDestroy {
       cards: [
         {
           name: 'JB Pritzker & Juliana Stratton',
-          pictureUrl: '../../assets/image/Governor/JB Pritzker.jpg',
+          pictureUrl: '../../assets/Governor/JB Pritzker.jpg',
           websiteUrl: 'https://www.jbpritzker.com/',
           party: Party.Democrat
         }
