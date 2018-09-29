@@ -1,0 +1,22 @@
+/*div {*/
+    /*font-family: 'Montserrat', sans-serif;*/
+/*}*/
+.eventTrackerLabel {
+    text-align: center;
+}
+.inner {
+    display: inline-block;
+}
+.outer {
+    text-align: center;
+}
+
+.label-font {
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.countdown-font {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+}
