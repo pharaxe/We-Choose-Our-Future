@@ -3,15 +3,32 @@ import { NgModule } from '@angular/core';
 import {RouterModule} from '@angular/router';
 import {appRoutes} from './routes';
 import { AppComponent } from './app.component';
-import {LandingModule} from './landing/landing.module'
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { CheckIfRegisteredComponent } from './content/steps/check-if-registered/check-if-registered.component';
+import { ChooseCandidatesComponent } from './content/steps/choose-candidates/choose-candidates.component';
+import { GoVoteComponent } from './content/steps/go-vote/go-vote.component';
+import { RegistrationOptionsComponent } from './content/steps/registration-options/registration-options.component';
+import {LandingComponent} from './landing/landing.component';
+import { ContentComponent } from './content/content.component';
+import { CountdownComponent } from './content/countdown/countdown.component';
+import {LandingModule} from './landing/landing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FooterComponent,
+    HeaderComponent,
+    CheckIfRegisteredComponent,
+    ChooseCandidatesComponent,
+    GoVoteComponent,
+    RegistrationOptionsComponent,
+    ContentComponent,
+    CountdownComponent,
   ],
   imports: [
-    BrowserModule,
     LandingModule,
+    BrowserModule,
     RouterModule.forRoot(appRoutes, { useHash: true })
   ],
   providers: [],
