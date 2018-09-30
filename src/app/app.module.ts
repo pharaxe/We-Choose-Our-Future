@@ -12,6 +12,7 @@ import { RegistrationOptionsComponent } from './content/steps/registration-optio
 import {LandingComponent} from './landing/landing.component';
 import { ContentComponent } from './content/content.component';
 import { CountdownComponent } from './content/countdown/countdown.component';
+import {LandingModule} from './landing/landing.module';
 
 @NgModule({
   declarations: [
@@ -22,11 +23,11 @@ import { CountdownComponent } from './content/countdown/countdown.component';
     ChooseCandidatesComponent,
     GoVoteComponent,
     RegistrationOptionsComponent,
-    LandingComponent,
     ContentComponent,
     CountdownComponent,
   ],
   imports: [
+    LandingModule,
     BrowserModule,
     RouterModule.forRoot(appRoutes, { useHash: true })
   ],
