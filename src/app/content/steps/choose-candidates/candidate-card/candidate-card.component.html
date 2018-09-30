@@ -1,17 +1,18 @@
 <a [href]="getWebSiteUrl()" target="_blank">
-<div [ngClass]="{
-    'democratic-colors':  party.toLowerCase() === 'democratic',
-    'republican-colors':  party.toLowerCase() === 'republican',
-    'libertarian-colors':  party.toLowerCase() === 'libertarian',
-    'independent-colors':  party.toLowerCase() === 'independent'
-  }"
- class="row rounded-corners">
-  <div class="col-2">
-    <img [src]="getImageUrl()" class="rounded-face">
+  <div [ngClass]="{
+      'democratic-colors':  party.toLowerCase() === 'democratic',
+      'republican-colors':  party.toLowerCase() === 'republican',
+      'libertarian-colors':  party.toLowerCase() === 'libertarian',
+      'independent-colors':  party.toLowerCase() === 'conservative'
+    }"
+   class="row rounded-corners"
+  >
+    <div class="col-2">
+      <img [src]="getImageUrl()" class="rounded-face">
+    </div>
+    <div class="col-10">
+      <div class="text-party">{{getPartyString()}}</div>
+      <div #candName class="text-name">{{getNameString()}}</div>
+    </div>
   </div>
-  <div class="col-10">
-    <div class="text-party">{{getPartyString()}}</div>
-    <div class="text-name">{{getNameString()}}</div>
-  </div>
-</div>
 </a>
