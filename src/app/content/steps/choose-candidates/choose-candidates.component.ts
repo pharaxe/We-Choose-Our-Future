@@ -41,11 +41,11 @@ export class ChooseCandidatesComponent implements OnInit {
     '"Representative in the General Assembly, 103rd State Representative District",Carol Ammons,Democratic,2,1,https://www.carolammons.com/,assets/Representative\ in\ the\ General\ Assembly/Carol\ Ammons.jpg\n' +
     'Regional Superintendent of Schools,Gary Lewis,Republican,4,1,https://www.ballotready.org/il/regional-superintendent-of-schools-region-9/gary-lewis/,assets/Regional\ Superintendent\ of\ Schools/Gary\ Lewis.jpg\n' +
     '"County Board Member, County Board District 8",Stephanie Fortado,Democratic,4,1,https://www.ballotready.org/il/champaign-county-board-member-district-8/stephanie-l-fortado/,assets/County\ Board\ Member/Stephanie\ Fortado.jpg\n' +
-    '"Judge of the Appellate Court, 4th Judicial District (Representative In Congress, 13th Congressional District)","Thomas M. Harris, Jr.",Republican,10,1,http://www.illinoiscourts.gov/AppellateCourt/Judges/Bio_HarrisT.asp,/\n' +
+    '"Judge of the Appellate Court, 4th Judicial District (Representative In Congress, 13th Congressional District)","Thomas M. Harris, Jr.",Republican,10,1,http://www.illinoiscourts.gov/AppellateCourt/Judges/Bio_HarrisT.asp,assets/Appellate 4th /ThomasMHarris.png\n' +
     '"Judge of the Appellate Court, 4th Judicial District (To fill the vacancy of the\n' +
-    'Hon. Arnold F. Blockman)",Ramona Sullivan,Democratic,6,1,https://ramonamsullivan.wixsite.com/mysite/,\n' +
+    'Hon. Arnold F. Blockman)",Ramona Sullivan,Democratic,6,1,https://ramonamsullivan.wixsite.com/mysite/,assets/Appellate 4th /RamonaSullivan.png\n' +
     '"Judge of the Appellate Court, 4th Judicial District (To fill the vacancy of the\n' +
-    'Hon. Arnold F. Blockman)",Roger B. Webber,Republican,6,1,https://ballotpedia.org/Roger_B._Webber,\n' +
+    'Hon. Arnold F. Blockman)",Roger B. Webber,Republican,6,1,https://ballotpedia.org/Roger_B._Webber,assets/Appellate 4th /RodgerWeber.png\n' +
     'Judge of the Circuit Court 6th Judicial Circuit,Chad Beckett,Democratic,6,1,http://www.chadbeckett.com/,assets/Judge\ of\ the\ Circuit\ Court\ 6th\ Judicial\ Circuit/Chad\ Beckett.jpg\n' +
     'Judge of the Circuit Court 6th Judicial Circuit,Randy Rosenbaum,Republican,6,1,https://judgerandyrosenbaum.com/,assets/Judge\ of\ the\ Circuit\ Court\ 6th\ Judicial\ Circuit/Randy\ Rosenbaum.jpg';
 
