@@ -40,13 +40,11 @@ export class CandidateCardComponent implements OnInit, AfterViewInit {
         return this.imageUrl;
     }
 
-    public onCardClick() {
+    public getWebSiteUrl() {
       let url = '';
       if (!/^http[s]?:\/\//.test(this.websiteUrl)) {
         url += 'http://';
       }
-
-      url += this.websiteUrl;
-      window.open(url, '_blank');
+      return url + this.websiteUrl;
     }
 }

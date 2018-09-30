@@ -1,5 +1,12 @@
-<div [ngSwitch]="party.toLowerCase()">
-  <div *ngSwitchCase="'democratic'" class="row rounded-corners democratic-colors" (click)="onCardClick()">
+<a [href]="getWebSiteUrl()" target="_blank">
+  <div [ngClass]="{
+      'democratic-colors':  party.toLowerCase() === 'democratic',
+      'republican-colors':  party.toLowerCase() === 'republican',
+      'libertarian-colors':  party.toLowerCase() === 'libertarian',
+      'independent-colors':  party.toLowerCase() === 'conservative'
+    }"
+   class="row rounded-corners"
+  >
     <div class="col-2">
       <img [src]="getImageUrl()" class="rounded-face">
     </div>
@@ -8,44 +15,4 @@
       <div #candName class="text-name">{{getNameString()}}</div>
     </div>
   </div>
-
-  <div *ngSwitchCase="'republican'" class="row rounded-corners republican-colors" (click)="onCardClick()">
-    <div class="col-2">
-      <img [src]="getImageUrl()" class="rounded-face">
-    </div>
-    <div class="col-10">
-      <div class="text-party">{{getPartyString()}}</div>
-      <div #candName class="text-name">{{getNameString()}}</div>
-    </div>
-  </div>
-
-  <div *ngSwitchCase="'green'" class="row rounded-corners green-colors" (click)="onCardClick()">
-    <div class="col-2">
-      <img [src]="getImageUrl()" class="rounded-face">
-    </div>
-    <div class="col-10">
-      <div class="text-party">{{getPartyString()}}</div>
-      <div #candName class="text-name">{{getNameString()}}</div>
-    </div>
-  </div>
-
-  <div *ngSwitchCase="'libertarian'" class="row rounded-corners libertarian-colors" (click)="onCardClick()">
-    <div class="col-2">
-      <img [src]="getImageUrl()" class="rounded-face">
-    </div>
-    <div class="col-10">
-      <div class="text-party">{{getPartyString()}}</div>
-      <div #candName class="text-name">{{getNameString()}}</div>
-    </div>
-  </div>
-
-  <div *ngSwitchDefault class="row rounded-corners independent-colors" (click)="onCardClick()">
-    <div class="col-2">
-      <img [src]="getImageUrl()" class="rounded-face">
-    </div>
-    <div class="col-10">
-      <div class="text-party">{{getPartyString()}}</div>
-      <div #candName class="text-name">{{getNameString()}}</div>
-    </div>
-  </div>
-</div>
+</a>
