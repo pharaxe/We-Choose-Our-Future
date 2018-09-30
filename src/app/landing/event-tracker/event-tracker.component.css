@@ -20,3 +20,9 @@
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
 }
+
+.text-time {
+    font-weight: bolder;
+    font-size: larger;
+    color: #bb3333;
+}
