@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+h4 {
+  font-family: 'Merriweather'
+}
+
 .HolyGrail {
   display: flex;
   min-height: 100vh;
@@ -15,7 +22,7 @@
 
 .HolyGrail-nav, .HolyGrail-ads {
   /* 12em is the width of the columns */
-  flex: 0 0 3em;
+  flex: 0 0 1.5em;
 }
 
 .HolyGrail-nav {
