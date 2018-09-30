@@ -13,6 +13,7 @@ import {LandingComponent} from './landing/landing.component';
 import { ContentComponent } from './content/content.component';
 import { CountdownComponent } from './content/countdown/countdown.component';
 import {LandingModule} from './landing/landing.module';
+import { InfoCardComponent } from './info-card/info-card.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {LandingModule} from './landing/landing.module';
     RegistrationOptionsComponent,
     ContentComponent,
     CountdownComponent,
+    InfoCardComponent,
   ],
   imports: [
     LandingModule,

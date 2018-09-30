@@ -1,0 +1,16 @@
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.flex-item {
+  margin: 1em;
+
+}
+
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+  }
+}
