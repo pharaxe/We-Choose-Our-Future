@@ -8,8 +8,9 @@
   </div>
   <hr>
   <div class="ui-g-12">
-    <div class="ui-g-12"  *ngFor="let election of electionList">
-      <div class="ui-g-12"  *ngFor="let card of election.cards">
+    <div class="ui-g-12"  *ngFor="let election of decoratedData">
+      <p>{{election.name}}</p>
+      <div class="ui-g-3"  *ngFor="let card of election.cards">
         <pm-candidate-card
           [name]="card.name"
           [pictureUrl]="card.pictureUrl"
