@@ -1,0 +1,114 @@
+/* For big screens */
+@media only screen and (min-width: 48em) {
+    .rounded-corners {
+        border-radius: 1.5em;
+        width: 30em;
+        height: 6em;
+        position: relative;
+    }
+
+    .rounded-face {
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        border-radius: 50%;
+        width: 5em;
+        height: 5em;
+        z-index: 20;
+        background-color: #fff;
+        padding: 4px;
+    }
+
+    .text-name {
+        padding-left: 1em;
+        position: absolute;
+        bottom: 0em;
+        padding-bottom: 0.5em;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        /*font-weight: bold;*/
+        font-size: 1.2em;
+    }
+
+    .text-party {
+        padding-left: 1em;
+        position: absolute;
+        top: 0em;
+        padding-top: 0.5em;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        /*font-weight: bold;*/
+        font-size: 1.2em;
+    }
+
+    .text-long-name {
+        font-size: 1.0em;
+        padding-bottom: 0.7em;
+    }
+}
+
+/* For small screens */
+@media only screen and (max-width: 48em) {
+    .rounded-corners {
+        border-radius: 1em;
+        width: 22em;
+        height: 4em;
+        position: relative;
+    }
+
+    .rounded-face {
+        margin-top: 0.25em;
+        margin-left: 0.25em;
+        border-radius: 50%;
+        width: 3.5em;
+        height: 3.5em;
+        z-index: 20;
+        background-color: #fff;
+        padding: 2px;
+    }
+
+    .text-name {
+        padding-left: 0.5em;
+        position: absolute;
+        bottom: 0em;
+        padding-bottom: 0.5em;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 0.7em;
+    }
+
+    .text-party {
+        padding-left: 0.5em;
+        position: absolute;
+        top: 0em;
+        padding-top: 0.5em;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 0.7em;
+    }
+
+    .text-long-name {
+        font-size: 0.6em;
+    }
+}
+
+.democratic-colors {
+    background: #3333ff;
+}
+
+.republican-colors {
+    background: #bb3333;
+}
+
+.libertarian-colors {
+    background: #666600;
+}
+
+.green-colors {
+    background: #227722;
+}
+
+.independent-colors {
+    background: #aaaaaa;
+}

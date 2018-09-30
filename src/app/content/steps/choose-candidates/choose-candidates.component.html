@@ -1,3 +1,19 @@
-<p>
-  The ballot component goes here
-</p>
+<h3>November 6th Elections</h3>
+<div class="ui-g outer">
+  <hr>
+  <div>
+    <div *ngFor="let election of decoratedData">
+      <h4>{{election.name}}</h4>
+      <div *ngFor="let card of election.cards"
+           class="card-vertical-padding">
+        <app-candidate-card
+            [name]="card.name"
+            [imageUrl]="card.pictureUrl"
+            [websiteUrl]="card.websiteUrl"
+            [party]="card.party"
+        ></app-candidate-card>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
