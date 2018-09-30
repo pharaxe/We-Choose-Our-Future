@@ -1,0 +1,46 @@
+.jumbotron{
+    background-color: lightblue;
+}
+.center{
+    text-align: center;
+}
+.size1{
+    font-size: 1.445em;
+    text-transform: uppercase;
+}
+.size2{
+    font-size: 1.225em;
+    text-decoration: underline;
+}
+.size3{
+    font-size:2.2em;
+}
+.rightAlignment{
+    margin-right: 3em;
+    text-align: right;
+}
+
+.height{
+  line-height: 1.225em
+}
+
+.height2{
+  line-height: .225em
+}
+
+.style{
+  font-family: 'Mali', cursive;
+}
+
+.style2{
+  font-family: 'Anton', sans-serif;
+}
+
+.boarder{
+  border-bottom: solid;
+  border-top: solid;
+  border-radius: 1em;
+  border-width: thin;
+  border-style: double;
+
+}
