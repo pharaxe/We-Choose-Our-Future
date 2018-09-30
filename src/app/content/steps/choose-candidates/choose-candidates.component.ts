@@ -110,7 +110,7 @@ export class ChooseCandidatesComponent implements OnInit {
     console.log('decoratedData: ' + this.decoratedData);
   }
 
-  private getUniqueValuesOfKey(array: object[], key){
+  private getUniqueValuesOfKey(array, key){
     let result = [];
     array.reduce((carry, item) => {
       if (item[key] && carry.indexOf(item[key]) === -1) {
