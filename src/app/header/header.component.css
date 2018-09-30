@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+.jumbotron:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.jumbotron {
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.center{
+    text-align: center;
+}
+.line2{
+    /* background-color: blue; */
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Playfair+Display';
+}
+.line1{
+    font-size: 3em;
+    font-family: 'Merriweather'
+}
+.line3{
+    font-size:1.225em;
+    text-transform: uppercase;
+}
+.rightAlign{
+    float: right;
+    font-family: 'Playfair+Display';
+    animation-name: changeColor;
+    animation-duration: 6s;
+}
+.leftAlign{
+    float: left;
+    font-family: 'Playfair+Display';
+    animation-name: changeColor;
+    animation-duration: 6s;
+}
+.horzLine{
+    border-bottom: 2px solid black;
+    animation-name: changeLength;
+    animation-duration: 3s;
+}
+
+@media only screen and (max-width: 768px){
+    .line1 {
+       font-size: 2em;
+    }
+    /*
+    .leftAlign{
+        float: right;
+        font-family: 'Playfair+Display';
+    }
+    */
+}
+
+@keyframes changeColor{
+    0%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@keyframes changeLength{
+    0%{
+        margin-left:50%;
+        margin-right:50%;
+    }
+    100%{
+        margin-left:0%;
+        margin-right:0%;
+    }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
