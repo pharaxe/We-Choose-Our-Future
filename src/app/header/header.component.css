@@ -40,11 +40,16 @@
     animation-duration: 3s;
 }
 
-@media only screen and (max-width: 443px){
+@media only screen and (max-width: 768px){
+    .line1 {
+       font-size: 2em;
+    }
+    /*
     .leftAlign{
         float: right;
         font-family: 'Playfair+Display';
     }
+    */
 }
 
 @keyframes changeColor{
