@@ -112,3 +112,7 @@
 .independent-colors {
     background: #aaaaaa;
 }
+
+.row {
+    display: inline-flex;
+}

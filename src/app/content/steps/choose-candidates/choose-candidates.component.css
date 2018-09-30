@@ -11,3 +11,9 @@
     -webkit-transform: scale(1.05); /* Safari 3-8 */
     transform: scale(1.05);
 }
+
+.inline-flex-hack {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 3em;
+}
