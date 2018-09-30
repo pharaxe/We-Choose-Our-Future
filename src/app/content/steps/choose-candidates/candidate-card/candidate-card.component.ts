@@ -32,7 +32,7 @@ export class CandidateCardComponent implements OnInit {
     }
 
     public onCardClick() {
-      let url: string = '';
+      let url = '';
       if (!/^http[s]?:\/\//.test(this.websiteUrl)) {
         url += 'http://';
       }
