@@ -123,7 +123,7 @@ export class LandingComponent implements OnInit, OnDestroy {
   private getUniqueValuesOfKey(array: object[], key){
     let result = [];
     array.reduce((carry, item) => {
-      if(item[key] && !~carry.indexOf(item[key])) {
+      if(item[key] && carry.indexOf(item[key]) !== -1) {
         carry.push(item[key]);
         result.push({
           election: item[key],
@@ -134,6 +134,7 @@ export class LandingComponent implements OnInit, OnDestroy {
     }, []);
     return result;
   }
+
   private getCards(array) {
     console.log('array', array);
     return array.map((card) => {

@@ -1,26 +1,26 @@
-<div class="ui-g outer">
-  <div class="ui-g-3 eventTracker" *ngFor="let event of events">
-    <pm-event-tracker
-      [date]="event.date"
-      [label]="event.label"
-      [url]="event.url"
-    ></pm-event-tracker>
-  </div>
-  <hr>
-  <div class="ui-g-12">
-    <div class="ui-g-12"  *ngFor="let election of decoratedData">
-      <p>{{election.name}}</p>
-      <div class="ui-g-3"  *ngFor="let card of election.cards">
-        <pm-candidate-card
-          [name]="card.name"
-          [pictureUrl]="card.pictureUrl"
-          [websiteUrl]="card.websiteUrl"
-          [party]="card.party"
-        ></pm-candidate-card>
-      </div>
-    </div>
-  </div>
-</div>
+<!--<div class="ui-g outer">-->
+  <!--<div class="ui-g-3 eventTracker" *ngFor="let event of events">-->
+    <!--<pm-event-tracker-->
+      <!--[date]="event.date"-->
+      <!--[label]="event.label"-->
+      <!--[url]="event.url"-->
+    <!--&gt;</pm-event-tracker>-->
+  <!--</div>-->
+  <!--<hr>-->
+  <!--<div class="ui-g-12">-->
+    <!--<div class="ui-g-12"  *ngFor="let election of decoratedData">-->
+      <!--<p>{{election.name}}</p>-->
+      <!--<div class="ui-g-3"  *ngFor="let card of election.cards">-->
+        <!--<app-candidate-card-->
+          <!--[name]="card.name"-->
+          <!--[imageUrl]="card.pictureUrl"-->
+          <!--[websiteUrl]="card.websiteUrl"-->
+          <!--[party]="card.party"-->
+        <!--&gt;</app-candidate-card>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
 
 
 <!--<button type="button" class="btn btn-primary">Primary</button>-->

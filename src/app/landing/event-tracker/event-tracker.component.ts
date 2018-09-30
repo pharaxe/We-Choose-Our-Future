@@ -2,7 +2,7 @@ import {Component, OnInit, OnDestroy, Input} from '@angular/core';
 
 @Component({
   providers: [],
-  selector: 'pm-event-tracker',
+  selector: 'app-event-tracker',
   templateUrl: './event-tracker.component.html',
   styleUrls: ['./event-tracker.component.css'],
 })
