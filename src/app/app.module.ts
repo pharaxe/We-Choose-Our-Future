@@ -14,9 +14,11 @@ import { CountdownComponent } from './content/countdown/countdown.component';
 import {LandingModule} from './landing/landing.module';
 import {CandidateCardComponent} from './content/steps/choose-candidates/candidate-card/candidate-card.component';
 import {CommonModule} from "@angular/common";
+import {EventTrackerModule} from './landing/event-tracker/event-tracker.module';
 
 @NgModule({
   declarations: [
+
     AppComponent,
     FooterComponent,
     HeaderComponent,
@@ -29,6 +31,7 @@ import {CommonModule} from "@angular/common";
     CandidateCardComponent,
   ],
   imports: [
+    EventTrackerModule,
     LandingModule,
     BrowserModule,
     RouterModule.forRoot(appRoutes, { useHash: true }),
