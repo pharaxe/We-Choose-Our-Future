@@ -1,49 +1,51 @@
-<div *ngIf="party.toLowerCase() === 'democratic'" class="row rounded-corners democratic-colors" (click)="onCardClick()">
-  <div class="col-2">
-    <img [src]="getImageUrl()" class="rounded-face">
+<div [ngSwitch]="party.toLowerCase()">
+  <div *ngSwitchCase="'democratic'" class="row rounded-corners democratic-colors" (click)="onCardClick()">
+    <div class="col-2">
+      <img [src]="getImageUrl()" class="rounded-face">
+    </div>
+    <div class="col-10">
+      <div class="text-party">{{getPartyString()}}</div>
+      <div #candName class="text-name">{{getNameString()}}</div>
+    </div>
   </div>
-  <div class="col-10">
-    <div class="text-party">{{getPartyString()}}</div>
-    <div class="text-name">{{getNameString()}}</div>
-  </div>
-</div>
 
-<div *ngIf="party.toLowerCase() === 'republican'" class="row rounded-corners republican-colors" (click)="onCardClick()">
-  <div class="col-2">
-    <img [src]="getImageUrl()" class="rounded-face">
+  <div *ngSwitchCase="'republican'" class="row rounded-corners republican-colors" (click)="onCardClick()">
+    <div class="col-2">
+      <img [src]="getImageUrl()" class="rounded-face">
+    </div>
+    <div class="col-10">
+      <div class="text-party">{{getPartyString()}}</div>
+      <div #candName class="text-name">{{getNameString()}}</div>
+    </div>
   </div>
-  <div class="col-10">
-    <div class="text-party">{{getPartyString()}}</div>
-    <div class="text-name">{{getNameString()}}</div>
-  </div>
-</div>
 
-<div *ngIf="party.toLowerCase() === 'green'" class="row rounded-corners green-colors" (click)="onCardClick()">
-  <div class="col-2">
-    <img [src]="getImageUrl()" class="rounded-face">
+  <div *ngSwitchCase="'green'" class="row rounded-corners green-colors" (click)="onCardClick()">
+    <div class="col-2">
+      <img [src]="getImageUrl()" class="rounded-face">
+    </div>
+    <div class="col-10">
+      <div class="text-party">{{getPartyString()}}</div>
+      <div #candName class="text-name">{{getNameString()}}</div>
+    </div>
   </div>
-  <div class="col-10">
-    <div class="text-party">{{getPartyString()}}</div>
-    <div class="text-name">{{getNameString()}}</div>
-  </div>
-</div>
 
-<div *ngIf="party.toLowerCase() === 'libertarian'" class="row rounded-corners libertarian-colors" (click)="onCardClick()">
-  <div class="col-2">
-    <img [src]="getImageUrl()" class="rounded-face">
+  <div *ngSwitchCase="'libertarian'" class="row rounded-corners libertarian-colors" (click)="onCardClick()">
+    <div class="col-2">
+      <img [src]="getImageUrl()" class="rounded-face">
+    </div>
+    <div class="col-10">
+      <div class="text-party">{{getPartyString()}}</div>
+      <div #candName class="text-name">{{getNameString()}}</div>
+    </div>
   </div>
-  <div class="col-10">
-    <div class="text-party">{{getPartyString()}}</div>
-    <div class="text-name">{{getNameString()}}</div>
-  </div>
-</div>
 
-<div *ngIf="party.toLowerCase() === 'independent'" class="row rounded-corners independent-colors" (click)="onCardClick()">
-  <div class="col-2">
-    <img [src]="getImageUrl()" class="rounded-face">
-  </div>
-  <div class="col-10">
-    <div class="text-party">{{getPartyString()}}</div>
-    <div class="text-name">{{getNameString()}}</div>
+  <div *ngSwitchDefault class="row rounded-corners independent-colors" (click)="onCardClick()">
+    <div class="col-2">
+      <img [src]="getImageUrl()" class="rounded-face">
+    </div>
+    <div class="col-10">
+      <div class="text-party">{{getPartyString()}}</div>
+      <div #candName class="text-name">{{getNameString()}}</div>
+    </div>
   </div>
 </div>
