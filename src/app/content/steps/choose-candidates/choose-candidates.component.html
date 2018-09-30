@@ -5,7 +5,7 @@
     <div *ngFor="let election of decoratedData">
       <h4>{{election.name}}</h4>
       <div *ngFor="let card of election.cards"
-           class="card-vertical-padding">
+           class="card-vertical-padding zoom">
         <app-candidate-card
             [name]="card.name"
             [imageUrl]="card.pictureUrl"
