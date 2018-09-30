@@ -7,7 +7,7 @@
 
 .flex-item {
   margin: 1em;
-
+  min-width: 17em;
 }
 
 @media (min-width: 768px) {
