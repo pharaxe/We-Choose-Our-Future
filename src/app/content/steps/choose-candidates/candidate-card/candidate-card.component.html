@@ -1,10 +1,9 @@
-<div class="row rounded-corners">
-
+<div class="row rounded-corners" (click)="onCardClick()">
   <div class="col-2">
-    <img src="../../../../../assets/Governor/JB%20Pritzker.jpg" class="rounded-face">
+    <img [src]="getImageUrl()" class="rounded-face">
   </div>
   <div class="col-10">
-    <div class="text-party">DEMOCRATIC</div>
-    <div class="text-name">Guy Manderson & Firstname Lastname</div>
+    <div class="text-party">{{getPartyString()}}</div>
+    <div class="text-name">{{getNameString()}}</div>
   </div>
 </div>
