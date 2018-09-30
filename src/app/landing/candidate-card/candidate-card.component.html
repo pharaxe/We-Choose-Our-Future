@@ -1,12 +1,14 @@
 <div class="ui-g">
   <div class="ui-g-12">
-    <img [src]="pictureUrl">
+    <!--<img [src]="pictureUrl">-->
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" [src]="pictureUrl" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <p class="card-text">bla bla bla</p>
+        <a [href]="websiteUrl" class="btn btn-primary">Homepage</a>
+      </div>
+    </div>
   </div>
 </div>
-
-<p>canidate card</p>
-<p>name:{{name}}</p>
-<p>{{pictureUrl}}</p>
-<p>{{websiteUrl}}</p>
-<p>{{party}}</p>
 
