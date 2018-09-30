@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.flex-item {
+  margin: 1em;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80%
+  }
+}
