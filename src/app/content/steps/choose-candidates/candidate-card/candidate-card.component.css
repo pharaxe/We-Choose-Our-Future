@@ -1,0 +1,87 @@
+/* For big screens */
+@media only screen and (min-width: 50em) {
+    .rounded-corners {
+        border-radius: 2em;
+        background: #3333ff;
+        width: 45em;
+        height: 8em;
+        position: relative;
+    }
+
+    .rounded-face {
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        border-radius: 50%;
+        width: 7em;
+        height: 7em;
+        z-index: 20;
+        background-color: #fff;
+        padding: 4px;
+    }
+
+    .text-name {
+        padding-left: 1em;
+        position: absolute;
+        bottom: 0em;
+        padding-bottom: 1em;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+
+    .text-party {
+        padding-left: 1em;
+        position: absolute;
+        top: 0em;
+        padding-top: 1em;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+}
+
+/* For small screens */
+@media only screen and (max-width: 50em) {
+    .rounded-corners {
+        border-radius: 1em;
+        background: #3333ff;
+        width: 22em;
+        height: 4em;
+        position: relative;
+    }
+
+    .rounded-face {
+        margin-top: 0.25em;
+        margin-left: 0.25em;
+        border-radius: 50%;
+        width: 3.5em;
+        height: 3.5em;
+        z-index: 20;
+        background-color: #fff;
+        padding: 2px;
+    }
+
+    .text-name {
+        padding-left: 0.5em;
+        position: absolute;
+        bottom: 0em;
+        padding-bottom: 0.5em;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 0.7em;
+    }
+
+    .text-party {
+        padding-left: 0.5em;
+        position: absolute;
+        top: 0em;
+        padding-top: 0.5em;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 0.7em;
+    }
+}
