@@ -9,11 +9,10 @@ import { CheckIfRegisteredComponent } from './content/steps/check-if-registered/
 import { ChooseCandidatesComponent } from './content/steps/choose-candidates/choose-candidates.component';
 import { GoVoteComponent } from './content/steps/go-vote/go-vote.component';
 import { RegistrationOptionsComponent } from './content/steps/registration-options/registration-options.component';
-import {LandingComponent} from './landing/landing.component';
 import { ContentComponent } from './content/content.component';
 import { CountdownComponent } from './content/countdown/countdown.component';
 import {LandingModule} from './landing/landing.module';
-import { InfoCardComponent } from './info-card/info-card.component';
+import {CandidateCardComponent} from './content/steps/choose-candidates/candidate-card/candidate-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +25,7 @@ import { InfoCardComponent } from './info-card/info-card.component';
     RegistrationOptionsComponent,
     ContentComponent,
     CountdownComponent,
-    InfoCardComponent,
+    CandidateCardComponent
   ],
   imports: [
     LandingModule,

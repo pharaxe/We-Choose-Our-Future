@@ -11,9 +11,9 @@ export class CandidateCardComponent implements OnInit, OnDestroy {
   @Input() pictureUrl: string;
   @Input() websiteUrl: string;
   @Input() party: string;
+  public card: string = '../../../assets/Card.png';
 
   constructor() {
-
   }
 
   public ngOnInit() {
