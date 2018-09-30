@@ -39,6 +39,11 @@
         /*font-weight: bold;*/
         font-size: 1.2em;
     }
+
+    .text-long-name {
+        font-size: 1.0em;
+        padding-bottom: 0.7em;
+    }
 }
 
 /* For small screens */
@@ -81,6 +86,10 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 0.7em;
+    }
+
+    .text-long-name {
+        font-size: 0.6em;
     }
 }
 

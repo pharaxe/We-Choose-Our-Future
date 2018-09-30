@@ -10,7 +10,7 @@ import {Election, Party} from '../../../landing/types';
 export class ChooseCandidatesComponent implements OnInit {
 //  Democratic	4	1
   public data = 'Position,Candidate,Party,Term Length,Vote For...,Official Website,Image\n' +
-    'Governor and Lieutenant Governor,JB Pritzker & Juliana Stratton,Democratic,4,1,https://www.jbpritzker.com/,\n' +
+    'Governor and Lieutenant Governor,JB Pritzker & Juliana Stratton,Democratic,4,1,https://www.jbpritzker.com/,../../../../src/assets/Governor/JB Pritzker.jpg\n' +
     'Governor and Lieutenant Governor,Bruce Rauner & Evelyn Sanguinetti,Republican,4,1,https://www.brucerauner.com/accomplishments/?utm_medium=search&utm_campaign=il-acc&utm_source=ad&utm_content=av&gclid=EAIaIQobChMI2NbuhITh3QIVAp7ACh1v_QXcEAAYAiAAEgJy4fD_BwE,\n' +
     'Governor and Lieutenant Governor,Grayson Kash Jackson & Sanjeev Mohip,Libertarian,4,1,https://www.kash2018.com/,\n' +
     'Governor and Lieutenant Governor,William \'Sam\' McCann & Aaron Merreighn,Conservative,4,1,https://mccannforillinois.com/,\n' +
