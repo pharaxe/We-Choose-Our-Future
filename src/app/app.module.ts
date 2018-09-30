@@ -13,6 +13,7 @@ import { ContentComponent } from './content/content.component';
 import { CountdownComponent } from './content/countdown/countdown.component';
 import {LandingModule} from './landing/landing.module';
 import {CandidateCardComponent} from './content/steps/choose-candidates/candidate-card/candidate-card.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -25,12 +26,13 @@ import {CandidateCardComponent} from './content/steps/choose-candidates/candidat
     RegistrationOptionsComponent,
     ContentComponent,
     CountdownComponent,
-    CandidateCardComponent
+    CandidateCardComponent,
   ],
   imports: [
     LandingModule,
     BrowserModule,
-    RouterModule.forRoot(appRoutes, { useHash: true })
+    RouterModule.forRoot(appRoutes, { useHash: true }),
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

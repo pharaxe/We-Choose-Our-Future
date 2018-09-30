@@ -1,44 +1,11 @@
-<p>
-  The ballot component goes here
-</p>
-
-<!--<div class="ui-g">-->
-  <!--<div class="ui-g-12 card-vertical-padding">-->
-    <!--<app-candidate-card [name]="'Foo'"-->
-                        <!--[party]="'democratic'"-->
-                        <!--[websiteUrl]="'www.google.com'"-->
-                        <!--[imageUrl]="'../../../../../assets/Governor/JB%20Pritzker.jpg'"-->
-    <!--&gt;</app-candidate-card>-->
-  <!--</div>-->
-  <!--<div class="ui-g-12 card-vertical-padding">-->
-    <!--<app-candidate-card [name]="'Foo'"-->
-                        <!--[party]="'republican'"-->
-                        <!--[websiteUrl]="'www.google.com'"-->
-                        <!--[imageUrl]="'../../../../../assets/Governor/JB%20Pritzker.jpg'"-->
-    <!--&gt;</app-candidate-card>-->
-  <!--</div>-->
-  <!--<div class="ui-g-12 card-vertical-padding">-->
-    <!--<app-candidate-card [name]="'Foo'"-->
-                        <!--[party]="'democratic'"-->
-                        <!--[websiteUrl]="'www.google.com'"-->
-                        <!--[imageUrl]="'../../../../../assets/Governor/JB%20Pritzker.jpg'"-->
-    <!--&gt;</app-candidate-card>-->
-  <!--</div>-->
-<!--</div>-->
-
+<h3>November 6th Elections</h3>
 <div class="ui-g outer">
-  <!--<div class="ui-g-3 eventTracker" *ngFor="let event of events">-->
-    <!--<pm-event-tracker-->
-        <!--[date]="event.date"-->
-        <!--[label]="event.label"-->
-        <!--[url]="event.url"-->
-    <!--&gt;</pm-event-tracker>-->
-  <!--</div>-->
   <hr>
-  <div class="ui-g-12">
-    <div class="ui-g-12"  *ngFor="let election of decoratedData">
-      <p>{{election.name}}</p>
-      <div class="ui-g-3"  *ngFor="let card of election.cards">
+  <div>
+    <div *ngFor="let election of decoratedData">
+      <h4>{{election.name}}</h4>
+      <div *ngFor="let card of election.cards"
+           class="card-vertical-padding zoom">
         <app-candidate-card
             [name]="card.name"
             [imageUrl]="card.pictureUrl"
@@ -46,6 +13,7 @@
             [party]="card.party"
         ></app-candidate-card>
       </div>
+      <hr>
     </div>
   </div>
 </div>
