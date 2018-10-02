@@ -1,6 +1,8 @@
 # Changelog
 
-## 10/1/208
+## 10/1/2018
+ * Added a stock "vote" image for open graph spec so link sharing is prettier.
+ * Made wechooseourfuture.com redirect to wechooseourfuture.org
  * Fixed link in "Find MTD Route" button.
  * Candidate party order is now randomized.
  * Removed some races that weren't general to the entire county to avoid confusion
