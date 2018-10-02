@@ -1,6 +1,6 @@
 # We Choose Our Future
 
-This project was done in 24 hours for Pyghack 2018.
+This project was created originally in 24 hours for Pyghack 2018.
 
 ## Group Members
 
