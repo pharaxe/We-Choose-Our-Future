@@ -1,5 +1,8 @@
 # Changelog
 
+## 10/2/2018
+ * Modified candidate images to all be 1:1 ratio
+
 ## 10/1/2018
  * Added a stock "vote" image for open graph spec so link sharing is prettier.
  * Made wechooseourfuture.com redirect to wechooseourfuture.org
