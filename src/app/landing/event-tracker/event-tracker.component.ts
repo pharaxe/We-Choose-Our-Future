@@ -36,6 +36,10 @@ export class EventTrackerComponent implements OnInit, OnDestroy {
 
     // Display the result in the element with id="demo"
     //  this.time = `${days}:${hours}:${minutes}:${seconds}`;
+    if (days < 0) {
+      days = 0;
+    }
+
     this.time = `${days}`;
 
     // If the count down is finished, write some text
