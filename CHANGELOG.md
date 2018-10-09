@@ -1,5 +1,9 @@
 # Changelog
 
+## 10/8/2018
+ * Countdowns can't go below 0.
+ * Bumped version number up to 1.0.0
+
 ## 10/2/2018
  * Modified candidate images to all be 1:1 ratio
 
